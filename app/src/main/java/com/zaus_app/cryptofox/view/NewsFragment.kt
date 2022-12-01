@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import com.zaus_app.cryptofox.databinding.FragmentNewsBinding
 
-
 class NewsFragment : Fragment() {
     private var _binding: FragmentNewsBinding? = null
     private val binding get() = _binding!!
