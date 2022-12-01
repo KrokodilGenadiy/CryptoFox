@@ -8,7 +8,9 @@ import com.zaus_app.cryptofox.view.HomeFragment
 import com.zaus_app.cryptofox.view.NewsFragment
 import com.zaus_app.cryptofox.view.SearchFragment
 import com.zaus_app.cryptofox.view.SettingsFragment
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
