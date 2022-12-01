@@ -17,7 +17,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         initNavigation()
-        binding.bottomNavigation.setItemSelected(R.id.home)
     }
 
     private fun checkFragmentExistence(tag: String): Fragment? = supportFragmentManager.findFragmentByTag(tag)
@@ -28,7 +27,6 @@ class MainActivity : AppCompatActivity() {
             .replace(R.id.fragment_placeholder, fragment, tag)
             .commit()
     }
-
     private fun initNavigation() {
         binding.bottomNavigation.setOnItemSelectedListener {
             when (it) {
@@ -54,5 +52,6 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
+        binding.bottomNavigation.setItemSelected(R.id.home)
     }
 }
